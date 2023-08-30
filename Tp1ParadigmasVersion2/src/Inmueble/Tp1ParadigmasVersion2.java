@@ -11,7 +11,7 @@ public class Tp1ParadigmasVersion2 {
       Lote lote1 = new Lote(20202,21,"Alvarez 80 ",23); 
       Lote lote2 = new Lote(20200,34,"Rodriguez 20",24);
       //Integer idPadron, int superficie, String domicilio, float avaluoxmt
-      
+      Lote lote3 = new Lote(212.2,"alaa",23);
       //creo una escritura
       
       Escritura escritura1 = new Escritura(1, lote1.superficie,lote1.getDomicilio());
@@ -19,6 +19,7 @@ public class Tp1ParadigmasVersion2 {
             
        registro1.registrar(lote1); 
        registro2.registrar(lote2); 
+       registro2.registrar(lote3); 
        
        registro1.emitirBoletos(); 
        registro2.emitirBoletos(); 

@@ -1,6 +1,6 @@
 package Inmueble;
 
-public class Edificio {
+public abstract class Edificio {
     protected float avaluoXmtr; 
       public float avaluo;  
       

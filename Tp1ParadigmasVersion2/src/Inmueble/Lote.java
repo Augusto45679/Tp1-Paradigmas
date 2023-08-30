@@ -7,8 +7,8 @@ public class Lote {
     public Registro inscripto;
     private String domicilio; 
     private float avaluoxmt; 
-    
-    //metodo constructor
+    private Edificio construccion;
+     //metodo constructor
 
     public Lote(Integer idPadron, int superficie, String domicilio, float avaluoxmt) {
         this.idPadron = idPadron;
@@ -58,4 +58,12 @@ public class Lote {
         this.avaluoxmt = avaluoxmt;
     }
     
+    public void setConstruccion(Edificio construccion) throws ErrorLote{
+        if(this.construccion == null){
+            this.construccion = construccion;
+        } else{
+            new ErrorLote();
+        }
+    }
+
 }
